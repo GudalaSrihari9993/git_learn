@@ -1,0 +1,43 @@
+diff --git a/array.c b/array.c
+index fba3d56..3fa7d29 100644
+--- a/array.c
++++ b/array.c
+@@ -1,4 +1,19 @@
+ #include<stdio.h>
++void evenodd(int *arr , int n)
++{
++      int i;
++      for(i=0;i<n;i++)
++      {
++          if(arr[i]%2==0)
++          {
++             printf("even\n");
++          }
++          else
++          {
++            printf("odd\n");
++          }
++      }
++}
+ int main()
+ {
+      int arr[100],n,res;
+@@ -8,6 +23,7 @@ int main()
+      {
+         scanf("%d",&arr[i]);
+      }
++     evenodd(arr,n);
+      
+ 
+      
+diff --git a/hello.c b/hello.c
+new file mode 100644
+index 0000000..37c72e4
+--- /dev/null
++++ b/hello.c
+@@ -0,0 +1,5 @@
++#include<stdio.h>
++int main()
++{
++    printf("hello world\n");
++}
